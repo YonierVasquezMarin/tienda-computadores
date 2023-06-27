@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import CarritoComprasComponent from 'src/stories/carrito-compras/carrito-compras.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarritoComprasComponent
   ],
   imports: [
     BrowserModule,
