@@ -1,0 +1,31 @@
+button {
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.producto-sin-agregar {
+    border: 2px solid rgb(255, 140, 0);
+    svg {
+        border: none;
+        fill: rgb(218, 122, 6);
+    }
+}
+
+.producto-agregado {
+    border: none;
+    background-color: rgb(243, 89, 89);
+    svg {
+        fill: white;
+    }
+}
