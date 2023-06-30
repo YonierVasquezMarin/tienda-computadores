@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'card-producto',
+  selector: 'btn-toggle-producto-en-carrito',
   templateUrl: './btn-toggle-producto-en-carrito.component.html',
   styleUrls: ['./btn-toggle-producto-en-carrito.scss'],
 })
@@ -10,7 +10,7 @@ export default class BtnToggleProductoEnCarritoComponent {
   productoSinAgregar: boolean = true;
 
   @Output()
-  toggleProductoEnCarrito = new EventEmitter<void>();
+  toggleProductoEnCarrito = new EventEmitter();
 
   toggleProducto() {
     this.toggleProductoEnCarrito.emit();

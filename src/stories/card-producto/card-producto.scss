@@ -1,0 +1,19 @@
+.producto {
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgb(110, 110, 110);
+    padding: 12px;
+    box-sizing: border-box;
+    display: grid;
+    justify-items: center;
+    color: rgb(87, 87, 87);
+
+    &--title {
+        font-size: 1.4rem;
+    }
+
+    &--price {
+        font-size: 1.2rem;
+    }
+}
