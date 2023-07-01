@@ -1,4 +1,10 @@
 <header class="header">
     <span class="header--title">Tienda computadores</span>
-    <carrito-compras></carrito-compras>
-</header>
+    <ng-container *ngIf="totalQuantityOfProducts | async as totalQuantityOfProducts; else noProducts">
+      <carrito-compras [cantidad]="totalQuantityOfProducts"></carrito-compras>
+    </ng-container>
+    <ng-template #noProducts>
+        <carrito-compras [cantidad]="0"></carrito-compras>
+    </ng-template>
+  </header>
+  

@@ -8,6 +8,8 @@ import { HeaderTiendaComponent } from './header-tienda/header-tienda.component';
 import { ListaProductosComponent } from './lista-productos/lista-productos.component';
 import CardProductoComponent from 'src/stories/card-producto/card-producto.component';
 import BtnToggleProductoEnCarritoComponent from 'src/stories/btn-toggle-producto-en-carrito/btn-toggle-producto-en-carrito.component';
+import { NgxsModule } from '@ngxs/store';
+import { StoreProducts } from 'src/actions/products.actions';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import BtnToggleProductoEnCarritoComponent from 'src/stories/btn-toggle-producto
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxsModule.forRoot([StoreProducts])
   ],
   providers: [],
   bootstrap: [AppComponent]
