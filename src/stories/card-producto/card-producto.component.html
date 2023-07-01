@@ -1,8 +1,8 @@
 <main class="producto">
-    <span class="producto--title">Asus Vivobook</span>
-    <span class="producto--price">$3890000</span>
+    <span class="producto--title">{{nombre}}</span>
+    <span class="producto--price">${{precio}}</span>
     <btn-toggle-producto-en-carrito
-        [productoSinAgregar]="true"
+        [productoSinAgregar]="productoSinAgregar"
         (toggleProductoEnCarrito)="toggleProductoEnCarrito()">
     </btn-toggle-producto-en-carrito>
 </main>

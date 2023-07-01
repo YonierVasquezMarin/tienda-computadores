@@ -7,12 +7,18 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export default class CardProductoComponent {
   @Input()
-  cantidad: number = 0;
+  nombre: string = '';
+
+  @Input()
+  precio: number = 0;
+
+  @Input()
+  productoSinAgregar: boolean = false;
 
   @Output()
-  irAlCarrito = new EventEmitter<Event>();
+  toggleProduct = new EventEmitter<Event>();
 
   toggleProductoEnCarrito() {
-    
+    this.toggleProduct.emit();
   }
 }
